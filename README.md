@@ -27,7 +27,7 @@ python main.py
 
 ## Commands
 
-* `/help`: Display this help message
+* `/help`: Display list of available commands
 * `/reset`: Reset the conversation history
 * `/save`: Save the conversation history to a file
 * `/quit`: Quit the chat session
