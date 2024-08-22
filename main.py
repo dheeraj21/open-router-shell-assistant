@@ -39,7 +39,7 @@ welcome_panel = Panel(
 • [border]/reset[/border] - Reset the conversation history
 • [border]/save[/border] - Save the conversation history to a file
 • [border]/quit[/border] - Quit the chat session""",
-    title="[ai]OpenRouter AI Chat Assistant[/ai]",
+    title="[ai]Open Router Shell Assistant[/ai]",
     border_style="border"
 )
 console.print(welcome_panel)
