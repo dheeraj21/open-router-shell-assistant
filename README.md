@@ -1,35 +1,47 @@
-# OpenRouter Prompt Companion
+## Open Router Shell Assistant
 
-A Python shell Companion that uses the OpenRouter API to generate responses to user queries.
+A Python shell AI  assistant that uses the OpenRouter API to generate responses to user input.
 
-## Features
-
-* Uses the OpenRouter API to generate responses to user queries
-* Allows users to enter a custom system prompt
-* Allows users to save conversation history to a file
-* Includes a `/help` command to display available commands
-* Includes a `/reset` command to reset conversation history
-* Includes a `/quit` command to quit the script
+## License
+Apache License 2.0
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/dheeraj21/open-router-prompt-companion.git`
-2. Change into the cloned directory: `cd open-router-prompt-companion`
-3. Install the required dependencies: `pip install -r requirements.txt`
+### Step 1: Clone the repository
+```bash
+git clone https://github.com/dheeraj21/open-router-shell-assistant.git
+```
+### Step 2: Install the required libraries
+```bash
+cd open-router-shell-assistant
+pip install -r requirements.txt
+```
+### Step 3: Set the OpenRouter API key
+```bash
+rename .env.example file to .env and add your open router api key
+```
+### Step 4: Run the shell assistant
+```bash
+python main.py
+```
 
-## Usage
+## Commands
 
-1. Run the script: `python main.py`
-2. Enter a system prompt (optional): `Enter a system prompt (optional):`
-3. Enter user input: `You:`
-4. View the generated responses: `AI (Default System Prompt):` and `AI (User-Entered System Prompt):`
+* `/help`: Display list of available commands
+* `/reset`: Reset the conversation history
+* `/save`: Save the conversation history to a file
+* `/quit`: Quit the chat session
 
-## Environment Variables
+## Model
 
-export OPENROUTER_API_KEY= 'Your OpenRouter API key'
+The shell assistant uses the `nousresearch/hermes-3-llama-3.1-405b` model by default, but you can change it easily by modifying the `model` variable in the `main.py` file.
+
+## Dependencies
+
+* `requests`
+* `json`
+* `rich`
+* `dotenv`
 
 ## License
-
-This project is licensed under the APACHE 2.0.
-
-
+Apache License 2.0
